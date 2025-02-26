@@ -1,0 +1,20 @@
+name: Show Trigger Info
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  show-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher les informations du commit
+        run: |
+          echo " Commit SHA: ${{ github.sha }}"
+          echo " Auteur: ${{ github.actor }}"
+          echo " Timestamp: ${{ github.event.head_commit.timestamp }}"
+          echo " Message du commit: ${{ github.event.head_commit.message }}"
