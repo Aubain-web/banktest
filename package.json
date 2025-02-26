@@ -1,0 +1,17 @@
+{
+  "name": "banktest",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  },
+  "dependencies": {
+    "chai": "^4.5.0"
+  }
+}
